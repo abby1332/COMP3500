@@ -1,0 +1,186 @@
+Script started on Mon 20 May 2024 04:24:25 PM CDT
+[?1034hbash-4.2$ nano simplec[K.c
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: simple.c                                    [22;35H[ New File ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[m#include <stdio.h>[4dincl   [22d[K[4di[K#include <math.h>[5d[6dint main() {[7d[8d}[A[7;9H7[7;22r8M[1;24r[8;1Hp[K[7;22r[22;1H
+[1;24r[7;9Hprintf("Enter 10 nu mbers:)7[8;22r8[8dM[1;24r[8;1H[8;9H[8;22r[22;1H
+[1;24r[7;35H ");7[8;22r8[8dM[1;24r[8;1H[8;9H[8;17H[8;9H7[8;22r8M[1;24r[9;1H[9;9Hfor(int	i = 0; i < 10; i++) {7[10;22r8[10dM[1;24r[10;1H[10;9H7[10;22r8M[1;24r[11;1H[11;9H}[A	[10;17H[A[8;9H[7;17H[A7[7;22r8[7dM[1;24r[7;1H[7;9Ha[K[7;9Hint arr[10][8d[9;9H[10;20H[11;17Hscanf("%d", arr	+ i);[12;10H7[13;22r8[13dM[1;24r[13;1H[13;9H7[13;22r8M[1;24r[14;1H[14;9Hint average =   [Z [Z      [K[14;9Hdouble average = 0;7[15;22r8[15dM[1;24r[15;1H[15;9H7[15;22r8M[1;24r[16;1H[16;9Hfor(int	i = 0; i < 10' i ++ ) {7[17;22r8[17dM[1;24r[17;1H[17;9H7[17;22r8M[1;24r[18;1H[18;9H}[A	[17;17Haverage	= average + sqrt(arr[i[ ]);[18;10H7[19;22r8[19dM[1;24r[19;1H[19;9Haverage	= average / 10;[20d[K[21d}[A[20;9H[21d[K[21;9H[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A([7dnt arr	10][8d[8;9Hp[9d	[10d[9;9H[8;37H[Z\:");n:");[9;9H[10;35H[9;9H[8;35H:");[K[Z:");[K[Z:\");n");[9;9H[10;36H[11d[12;10H[13d	[14;28H[15;9H[16;36H[17d[18;10H[19;32H[20;9H[21dprintf("The average of te[Z [Zhe square root of the numbers is: %d\n", avera$averag[Ke);7[2;22r8[22d[10S[1;24r[2;1H[K[11;8H[1K	printf("The average of the square root of the numbers is: %d\n", averag$[13;1H}[A[12;9H7[12;22r8M[1;24r[13;1H[13;9Hreturn 0;[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: simple.c                                [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format	(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	    (B[0;7mM-M(B[m Mac Format	(B[0;7mM-P(B[m Prepend[22;29H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 22 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>bash-4.2$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+bash-4.2$ gcc -g -lm -o simple simple/c[K[K.c
+[01m[Ksimple.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksimple.c:6:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[Kprintf[m[K’
+  printf("Enter 10 numbers:\n");
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:8:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kfor[m[K’ loop initial declarations are only allowed in C99 mode
+  for(int i = 0; i < 10; i++) {
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:8:2:[m[K [01;36m[Knote: [m[Kuse option -std=c99 or -std=gnu99 to compile your code
+[01m[Ksimple.c:9:15:[m[K [01;31m[Kerror: [m[K‘[01m[Karr[m[K’ undeclared (first use in this function)
+   scanf("%d", arr + i);
+[01;32m[K               ^[m[K
+[01m[Ksimple.c:9:15:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Ksimple.c:14:10:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ki[m[K’
+  for(int i = 0; i < 10' i ++) {
+[01;32m[K          ^[m[K
+[01m[Ksimple.c:8:10:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Ki[m[K’ was here
+  for(int i = 0; i < 10; i++) {
+[01;32m[K          ^[m[K
+[01m[Ksimple.c:14:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kfor[m[K’ loop initial declarations are only allowed in C99 mode
+  for(int i = 0; i < 10' i ++) {
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:14:23:[m[K [01;35m[Kwarning: [m[Kmissing terminating ' character [enabled by default]
+  for(int i = 0; i < 10' i ++) {
+[01;32m[K                       ^[m[K
+[01m[Ksimple.c:14:2:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+  for(int i = 0; i < 10' i ++) {
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:15:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kaverage[m[K’
+   average = average + sqrt(arr[i]);
+[01;32m[K   ^[m[K
+[01m[Ksimple.c:16:2:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K}[m[K’ token
+  }
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:16:2:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K}[m[K’ token
+[01m[Ksimple.c:[m[K At top level:
+[01m[Ksimple.c:17:2:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class [enabled by default]
+  average = average / 10;
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:17:2:[m[K [01;31m[Kerror: [m[Kinitializer element is not constant
+[01m[Ksimple.c:19:9:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before string constant
+  printf("The average of the square root of the numbers is: %d\n", average);
+[01;32m[K         ^[m[K
+[01m[Ksimple.c:19:67:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before ‘[01m[Kaverage[m[K’
+  printf("The average of the square root of the numbers is: %d\n", average);
+[01;32m[K                                                                   ^[m[K
+[01m[Ksimple.c:21:2:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+  return 0;
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:22:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+ }
+[01;32m[K ^[m[K
+bash-4.2$ gcc -g -lm -o simple simple.c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knano simple.c 
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: simple.c                                    [3;1H(B[m#include <stdio.h>[4d#include <math.h>[6dint main() {[7d	int arr[10][8;9Hprintf("Enter 10 numbers:\n");[10;9Hfor(int i = 0; i < 10; i++) {[11;17Hscanf("%d", arr + i);[12;9H}[14d	double average = 0;[16;9Hfor(int i = 0; i < 10' i ++) {[17;17Haverage = average + sqrt(arr[i]);[18;9H}[19d	average = average / 10;[21;9Hprintf("The average of the square root of the numbers is: %d\n", averag$[22;32H(B[0;7m[ Read 22 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[7;9H[8dpri[9d	[10;12H([11d	[12d}[13d	[14;13H[15d	[16;13Hint	i =[22d[K[16;21H0; 	 < 10'[1;71H(B[0;7mModified[16;30H(B[m[1P; i ++) {[16;31H[17d[18;10H[19;31H[20;9H[21;31H7[2;22r8[22d[10S[1;24r[2;1H[K[13;9Hreturn 0;[14d}[12;9H[13d[14d[13;18H[Z[12;9H[11;16H	[10;9H[11dp	[10;9H[11d[11;9H[12d[A$average);[K[Z[1K	printf("The average of the square root of the numbers is: %d\n", averag$[12;9H[A$average);[K[Z[1K	printf("The average of the square root of the numbers is: %d\n", averag$[10;9H[9;32H[8;10H[7;50H[6;39H[5;9H[4;28H[3;9H[2;22r[2;1H[10T[1;24r[3;1H#include <stdio.h>[4d#include <math.h>[6dint main() {[7d	int arr[10][8;9Hprintf("Enter 10 numbers:\n");[10;9Hfor(int i = 0; i < 10; i++) {[11;17Hscanf("%d", arr + i);[12;9H}[11;38H[A[9;9H[8;39H[7;20H[6;13H[7;20H[8d[A];[8d[9;9H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: simple.c                                [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format	(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	    (B[0;7mM-M(B[m Mac Format	(B[0;7mM-P(B[m Prepend[22;29H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 22 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>bash-4.2$ nano simple.c [C[C[C[C[C[C[C[C[C[Cgcc -g -lm -o simple simple.c -[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv[Knano simple.c
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: simple.c                                    [3;1H(B[m#include <stdio.h>[4d#include <math.h>[6dint main() {[7d	int arr[10];[8;9Hprintf("Enter 10 numbers:\n");[10;9Hfor(int i = 0; i < 10; i++) {[11;17Hscanf("%d", arr + i);[12;9H}[14d	double average = 0;[16;9Hfor(int i = 0; i < 10; i ++) {[17;17Haverage = average + sqrt(arr[i]);[18;9H}[19d	average = average / 10;[21;9Hprintf("The average of the square root of the numbers is: %d\n", averag$[22;32H(B[0;7m[ Read 22 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d7[2;21r8[10S[1;24r[2;1H[K[13;9Hreturn 0;[14d}[12d[13d[14d[15d[22d[K[15d[23d[J[24;80H[24;1H[?1049l[?1l>bash-4.2$ nano simple.c [C[C[C[C[C[C[C[C[C[Cgcc -g -lm -o simple simple.c -std=c99
+bash-4.2$ ngcc -g -lm -o simple simple.c -std=c99[C[C[C[C[C[C[C[C[C[C[25Pnano simple.c
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: simple.c                                    [3;1H(B[m#include <stdio.h>[4d#include <math.h>[6dint main() {[7d	int arr[10];[8;9Hprintf("Enter 10 numbers:\n");[10;9Hfor(int i = 0; i < 10; i++) {[11;17Hscanf("%d", arr + i);[12;9H}[14d	double average = 0;[16;9Hfor(int i = 0; i < 10; i ++) {[17;17Haverage = average + sqrt(arr[i]);[18;9H}[19d	average = average / 10;[21;9Hprintf("The average of the square root of the numbers is: %d\n", averag$[22;32H(B[0;7m[ Read 22 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[21;9Hprintf[22d[K[21;16H	The ave	age of 	he squa	e root 	f the n	mbers i	: %d[1;71H(B[0;7mModified[21;68H(B[m\n", average[21;68H.\n", averag[21;69H2\n", avera[21;70Hf\n", aver[21;71H\	", ave$, average);[K[Z	g	[1K	printf("The average of the square root of the numbers is: %.2f\n", aver$[21;79He$, average);[K[Z[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: simple.c                                [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format	(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	    (B[0;7mM-M(B[m Mac Format	(B[0;7mM-P(B[m Prepend[22;29H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 22 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>bash-4.2$ nano simple.c[C[C[C[C[C[C[C[C[C[Cgcc -g -lm -o simple simple.c -std=c99
+bash-4.2$ gcc -g -lm -o simple simple.c -std=c99[C[C[C[C[C[C[C[C[C[C[25Pnano simple.c[C[C[C[C[C[C[C[C[C[Cgcc -g -lm -o simple simple.c -std=c99[C[C[C[C[C[C[C[C[C[C[25Pnano simple.c [C[C[C[C[C[C[C[C[C[Cgcc -g -lm -o simple simple.c
+[01m[Ksimple.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksimple.c:8:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kfor[m[K’ loop initial declarations are only allowed in C99 mode
+  for(int i = 0; i < 10; i++) {
+[01;32m[K  ^[m[K
+[01m[Ksimple.c:8:2:[m[K [01;36m[Knote: [m[Kuse option -std=c99 or -std=gnu99 to compile your code
+[01m[Ksimple.c:14:10:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ki[m[K’
+  for(int i = 0; i < 10; i ++) {
+[01;32m[K          ^[m[K
+[01m[Ksimple.c:8:10:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Ki[m[K’ was here
+  for(int i = 0; i < 10; i++) {
+[01;32m[K          ^[m[K
+[01m[Ksimple.c:14:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kfor[m[K’ loop initial declarations are only allowed in C99 mode
+  for(int i = 0; i < 10; i ++) {
+[01;32m[K  ^[m[K
+bash-4.2$ ./simple/[K
+Enter 10 numbers:
+16
+16
+16
+16
+16
+16
+16
+16
+16
+16
+The average of the square root of the numbers is: 4.00
+bash-4.2$ 1[Kman ldd
+[?1049h[?1h=LDD(1)                     Linux Programmer's Manual                    LDD(1)[m
+[m
+[1mNAME[0m[m
+       ldd - print shared library dependencies[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mldd[0m [OPTION]... FILE...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mldd[0m  prints  the  shared  libraries  required by each program or shared[m
+       library specified on the command line.[m
+[m
+   [1mSecurity[0m[m
+       In the usual  case,  [1mldd[0m  invokes  the  standard  dynamic  linker  (see[m
+       [1mld.so[0m(8))  with the [1mLD_TRACE_LOADED_OBJECTS[0m environment variable set to[m
+       1, which causes the linker to display  the  library  dependencies.   Be[m
+       aware,  however,  that  in some circumstances, some versions of [1mldd[0m may[m
+       attempt to obtain the dependency information by directly executing  the[m
+       program.  Thus, you should [4mnever[24m employ [1mldd[0m on an untrusted executable,[m
+       since this may result in the execution  of  arbitrary  code.   A  safer[m
+       alternative when dealing with untrusted executables is:[m
+[m
+           $ objdump -p /path/to/program | grep NEEDED[m
+[7m Manual page ldd(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ ldd simple
+	linux-vdso.so.1 =>  (0x00007ffee87d1000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f3277b7e000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f32777b0000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f3277e80000)
+bash-4.2$ vi gdb.gdbinit
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"gdb.gdbinit" [New File][2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?12l[?25h[?25l[m[24;1H[K[24;1H:[?12l[?25hwq[?25l"gdb.gdbinit" [New] 0L, 0C written
+[?1l>[?12l[?25h[?1049lbash-4.2$ gdb.gdbini[Kit
+bash: gdb.gdbinit: command not found
+bash-4.2$ cd gdb.i[Kgdbinit 
+bash: cd: gdb.gdbinit: Not a directory
+bash-4.2$ vi gdb.gfbinit[K[K[K[K[K[Kdbinit
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"gdb.gdbinit" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?12l[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[2;1H[K[2;1H[?12l[?25h[?25lb[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lk[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l[3;1H[K[3;1H[?12l[?25h[?25lb[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lk[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lq[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l[4;1H[K[4;1H[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l[5;1H[K[5;1H[?12l[?25h[?25l:[?12l[?25h[?25lw[?12l[?25h[?25l[5;2H[K[5;2H[?12l[?25h[?25l[5;1H[K[5;1H[?12l[?25h[24;1H[K[5;1H[?25l[?12l[?25h[?25l[24;1H:[?12l[?25hwq[?25l"gdb.gdbinit" 5L, 50C written
+[?1l>[?12l[?25h[?1049lbash-4.2$ gdb
+[?1034hGNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) file simple
+Reading symbols from /home/u1/amm0257/simple...done.
+(gdb) r[Kbreak main
+Breakpoint 1 at 0x400665: file simple.c, line 6.
+(gdb) break sqrt
+Breakpoint 2 at 0x400560
+(gdb) n[Kinfo registers
+The program has no registers now.
+(gdb) r
+Starting program: /home/u1/amm0257/simple 
+
+Breakpoint 1, main () at simple.c:6
+6		printf("Enter 10 numbers:\n");
+(gdb) 10
+Undefined command: "10".  Try "help".
+(gdb) g[Kn
+Enter 10 numbers:
+8		for(int i = 0; i < 10; i++) {
+(gdb) n
+9			scanf("%d", arr + i);
+(gdb) n
+s
+8		for(int i = 0; i < 10; i++) {
+(gdb) s
+9			scanf("%d", arr + i);
+(gdb) v[Kc
+Continuing.
+
+Breakpoint 2, __sqrt (x=1) at w_sqrt.c:27
+27	  if (__builtin_expect (isless (x, 0.0), 0) && _LIB_VERSION != _IEEE_)
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 1103] will be killed.
+
+Quit anyway? (y or n) y
+bash-4.2$ exit
+exit
+
+Script done on Mon 20 May 2024 04:36:20 PM CDT

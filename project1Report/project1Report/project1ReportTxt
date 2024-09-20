@@ -1,0 +1,17 @@
+I found myself often confused during this project.
+To begin, CentOS seems to be discontinued and I couldn't find a good download
+link. Additionally, when I intalled docker, the screenshots included in the
+power point were outdated compared to the current docker. When I tried to
+run Ubuntu, it would exit immediately and wouldn't allow me to use the
+terminal. I was very confused by options 2-4 so I opted for option 1.
+I was also confused on wether option 1 was available as the lecture video
+seemed to imply that option 1 should not be taken. Another strange issue
+that happened to me was after I tarred my project, the tar and the folder were 
+both empty and I lost all my files and had to restart.
+
+I believe I achieved all the deliverables. I was able to code the simple.c 
+program. I opted to use Nano as my text editor instead of vim. Additionally,
+I compiled the program with gcc and tested it with the GNU debugger.
+I believe I adequately displayed my ability to use basic linux commands.
+I also have experience using git from my previous internship and displayed
+so in the git script as well.

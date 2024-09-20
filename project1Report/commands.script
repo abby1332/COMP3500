@@ -1,0 +1,21 @@
+Script started on Mon 20 May 2024 04:22:43 PM CDT
+[?1034hbash-4.2$ cd[K[Kls
+appdata		 comp3500  Documents   project1Report
+commands.script  Desktop   ntuser.cmd  test.txt
+bash-4.2$ cd comp3500/
+bash-4.2$ cd project1/
+bash-4.2$ ls
+a.out		 cpu.c	      driver.c	new_project1
+commands.script  cpuinfo.txt  file.c	project1Report
+bash-4.2$ rm commands.script
+bash-4.2$ clear
+[3;J[H[2Jbash-4.2$ more .pr[K[K[K.[K/proc/cpuinfo > cpuinfo.txt
+bash-4.2$ ls
+a.out  cpu.c  cpuinfo.txt  driver.c  file.c  new_project1  project1Report
+bash-4.2$ lsmore /proc/cpuinfo > cpuinfo.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmeminfo > meminfo.txt
+bash-4.2$ more /proc.[K/interrupts > interrupts.txt
+bash-4.2$ lspci > lspci.txt
+bash-4.2$ exit
+exit
+
+Script done on Mon 20 May 2024 04:24:14 PM CDT

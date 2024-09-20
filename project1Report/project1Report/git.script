@@ -1,0 +1,193 @@
+Script started on Mon 20 May 2024 04:36:26 PM CDT
+[?1034hbash-4.2$ git init
+Initialized empty Git repository in /home/u1/amm0257/.git/
+bash-4.2$ ls
+appdata		 Desktop      gdb.script  project1Report  test.txt
+commands.script  Documents    git.script  simple
+comp3500	 gdb.gdbinit  ntuser.cmd  simple.c
+bash-4.2$ cd comp3500/
+bash-4.2$ cd project1/
+bash-4.2$ git init
+Initialized empty Git repository in /home/u1/amm0257/comp3500/project1/.git/
+bash-4.2$ touch cpu.c
+bash-4.2$ touch file.c
+bash-4.2$ git [K[K[K[Ktouch driver.c
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	a.out
+#	cpu.c
+#	cpuinfo.txt
+#	driver.c
+#	file.c
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	new_project1/
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ git add *.c
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   cpu.c
+#	new file:   driver.c
+#	new file:   file.c
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	a.out
+#	cpuinfo.txt
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	new_project1/
+bash-4.2$ git commm[Kit -m 'Initial project 1'
+[master (root-commit) 8b319d1] Initial project 1
+ Committer: Abigail M Miller <amm0257@tux250.eng.auburn.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cpu.c
+ create mode 100644 driver.c
+ create mode 100644 file.c
+bash-4.2$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	a.out
+#	cpuinfo.txt
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	new_project1/
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ rm cpu.c
+bash-4.2$ ls
+a.out	     driver.c  interrupts.txt  meminfo.txt   project1Report
+cpuinfo.txt  file.c    lspci.txt       new_project1
+bash-4.2$ git checkout cpu.c
+bash-4.2$ git checkout -b master2
+Switched to a new branch 'master2'
+bash-4.2$ touch cpu2.c
+bash-4.2$ a[Kgit add cpu2.c
+bash-4.2$ git commit -m 'cpu2 is added into master 2'
+[master2 1178214] cpu2 is added into master 2
+ Committer: Abigail M Miller <amm0257@tux250.eng.auburn.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cpu2.c
+bash-4.2$ git branch
+  master
+* master2
+bash-4.2$ git c[K[K[K[K[Kls
+a.out	cpu.c	     driver.c  interrupts.txt  meminfo.txt   project1Report
+cpu2.c	cpuinfo.txt  file.c    lspci.txt       new_project1
+bash-4.2$ git checkout master
+Switched to branch 'master'
+bash-4.2$ ls
+a.out  cpuinfo.txt  file.c	    lspci.txt	 new_project1
+cpu.c  driver.c     interrupts.txt  meminfo.txt  project1Report
+bash-4.2$ git clone =n[K[K-b master . ../new_project1
+Cloning into '../new_project1'...
+done.
+bash-4.2$ cd ..
+bash-4.2$ ls
+new_project1  project1
+bash-4.2$ cd new_project1/
+bash-4.2$ ls
+cpu.c  driver.c  file.c
+bash-4.2$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 125397, done.[K
+remote: Counting objects:   0% (1/125397)[Kremote: Counting objects:   1% (1254/125397)[Kremote: Counting objects:   2% (2508/125397)[Kremote: Counting objects:   3% (3762/125397)[Kremote: Counting objects:   4% (5016/125397)[Kremote: Counting objects:   5% (6270/125397)[Kremote: Counting objects:   6% (7524/125397)[Kremote: Counting objects:   7% (8778/125397)[Kremote: Counting objects:   8% (10032/125397)[Kremote: Counting objects:   9% (11286/125397)[Kremote: Counting objects:  10% (12540/125397)[Kremote: Counting objects:  11% (13794/125397)[Kremote: Counting objects:  12% (15048/125397)[Kremote: Counting objects:  13% (16302/125397)[Kremote: Counting objects:  14% (17556/125397)[Kremote: Counting objects:  15% (18810/125397)[Kremote: Counting objects:  16% (20064/125397)[Kremote: Counting objects:  17% (21318/125397)[Kremote: Counting objects:  18% (22572/125397)[Kremote: Counting objects:  19% (23826/125397)[Kremote: Counting objects:  20% (25080/125397)[Kremote: Counting objects:  21% (26334/125397)[Kremote: Counting objects:  22% (27588/125397)[Kremote: Counting objects:  23% (28842/125397)[Kremote: Counting objects:  24% (30096/125397)[Kremote: Counting objects:  25% (31350/125397)[Kremote: Counting objects:  26% (32604/125397)[Kremote: Counting objects:  27% (33858/125397)[Kremote: Counting objects:  28% (35112/125397)[Kremote: Counting objects:  29% (36366/125397)[Kremote: Counting objects:  30% (37620/125397)[Kremote: Counting objects:  31% (38874/125397)[Kremote: Counting objects:  32% (40128/125397)[Kremote: Counting objects:  33% (41382/125397)[Kremote: Counting objects:  34% (42635/125397)[Kremote: Counting objects:  35% (43889/125397)[Kremote: Counting objects:  36% (45143/125397)[Kremote: Counting objects:  37% (46397/125397)[Kremote: Counting objects:  38% (47651/125397)[Kremote: Counting objects:  39% (48905/125397)[Kremote: Counting objects:  40% (50159/125397)[Kremote: Counting objects:  41% (51413/125397)[Kremote: Counting objects:  42% (52667/125397)[Kremote: Counting objects:  43% (53921/125397)[Kremote: Counting objects:  44% (55175/125397)[Kremote: Counting objects:  45% (56429/125397)[Kremote: Counting objects:  46% (57683/125397)[Kremote: Counting objects:  47% (58937/125397)[Kremote: Counting objects:  48% (60191/125397)[Kremote: Counting objects:  49% (61445/125397)[Kremote: Counting objects:  50% (62699/125397)[Kremote: Counting objects:  51% (63953/125397)[Kremote: Counting objects:  52% (65207/125397)[Kremote: Counting objects:  53% (66461/125397)[Kremote: Counting objects:  54% (67715/125397)[Kremote: Counting objects:  55% (68969/125397)[Kremote: Counting objects:  56% (70223/125397)[Kremote: Counting objects:  57% (71477/125397)[Kremote: Counting objects:  58% (72731/125397)[Kremote: Counting objects:  59% (73985/125397)[Kremote: Counting objects:  60% (75239/125397)[Kremote: Counting objects:  61% (76493/125397)[Kremote: Counting objects:  62% (77747/125397)[Kremote: Counting objects:  63% (79001/125397)[Kremote: Counting objects:  64% (80255/125397)[Kremote: Counting objects:  65% (81509/125397)[Kremote: Counting objects:  66% (82763/125397)[Kremote: Counting objects:  67% (84016/125397)[Kremote: Counting objects:  68% (85270/125397)[Kremote: Counting objects:  69% (86524/125397)[Kremote: Counting objects:  70% (87778/125397)[Kremote: Counting objects:  71% (89032/125397)[Kremote: Counting objects:  72% (90286/125397)[Kremote: Counting objects:  73% (91540/125397)[Kremote: Counting objects:  74% (92794/125397)[Kremote: Counting objects:  75% (94048/125397)[Kremote: Counting objects:  76% (95302/125397)[Kremote: Counting objects:  77% (96556/125397)[Kremote: Counting objects:  78% (97810/125397)[Kremote: Counting objects:  79% (99064/125397)[Kremote: Counting objects:  80% (100318/125397)[Kremote: Counting objects:  81% (101572/125397)[Kremote: Counting objects:  82% (102826/125397)[Kremote: Counting objects:  83% (104080/125397)[Kremote: Counting objects:  84% (105334/125397)[Kremote: Counting objects:  85% (106588/125397)[Kremote: Counting objects:  86% (107842/125397)[Kremote: Counting objects:  87% (109096/125397)[Kremote: Counting objects:  88% (110350/125397)[Kremote: Counting objects:  89% (111604/125397)[Kremote: Counting objects:  90% (112858/125397)[Kremote: Counting objects:  91% (114112/125397)[Kremote: Counting objects:  92% (115366/125397)[Kremote: Counting objects:  93% (116620/125397)[Kremote: Counting objects:  94% (117874/125397)[Kremote: Counting objects:  95% (119128/125397)[Kremote: Counting objects:  96% (120382/125397)[Kremote: Counting objects:  97% (121636/125397)[Kremote: Counting objects:  98% (122890/125397)[Kremote: Counting objects:  99% (124144/125397)[Kremote: Counting objects: 100% (125397/125397)[Kremote: Counting objects: 100% (125397/125397), done.[K
+remote: Compressing objects:   0% (1/34942)[Kremote: Compressing objects:   1% (350/34942)[Kremote: Compressing objects:   2% (699/34942)[Kremote: Compressing objects:   3% (1049/34942)[Kremote: Compressing objects:   4% (1398/34942)[Kremote: Compressing objects:   5% (1748/34942)[Kremote: Compressing objects:   6% (2097/34942)[Kremote: Compressing objects:   7% (2446/34942)[Kremote: Compressing objects:   8% (2796/34942)[Kremote: Compressing objects:   9% (3145/34942)[Kremote: Compressing objects:  10% (3495/34942)[Kremote: Compressing objects:  11% (3844/34942)[Kremote: Compressing objects:  12% (4194/34942)[Kremote: Compressing objects:  13% (4543/34942)[Kremote: Compressing objects:  14% (4892/34942)[Kremote: Compressing objects:  15% (5242/34942)[Kremote: Compressing objects:  16% (5591/34942)[Kremote: Compressing objects:  17% (5941/34942)[Kremote: Compressing objects:  18% (6290/34942)[Kremote: Compressing objects:  19% (6639/34942)[Kremote: Compressing objects:  20% (6989/34942)[Kremote: Compressing objects:  21% (7338/34942)[Kremote: Compressing objects:  22% (7688/34942)[Kremote: Compressing objects:  23% (8037/34942)[Kremote: Compressing objects:  24% (8387/34942)[Kremote: Compressing objects:  25% (8736/34942)[Kremote: Compressing objects:  26% (9085/34942)[Kremote: Compressing objects:  27% (9435/34942)[Kremote: Compressing objects:  28% (9784/34942)[Kremote: Compressing objects:  29% (10134/34942)[Kremote: Compressing objects:  30% (10483/34942)[Kremote: Compressing objects:  31% (10833/34942)[Kremote: Compressing objects:  32% (11182/34942)[Kremote: Compressing objects:  33% (11531/34942)[Kremote: Compressing objects:  34% (11881/34942)[Kremote: Compressing objects:  35% (12230/34942)[Kremote: Compressing objects:  36% (12580/34942)[Kremote: Compressing objects:  37% (12929/34942)[Kremote: Compressing objects:  38% (13278/34942)[Kremote: Compressing objects:  39% (13628/34942)[Kremote: Compressing objects:  40% (13977/34942)[Kremote: Compressing objects:  41% (14327/34942)[Kremote: Compressing objects:  42% (14676/34942)[Kremote: Compressing objects:  43% (15026/34942)[Kremote: Compressing objects:  44% (15375/34942)[Kremote: Compressing objects:  45% (15724/34942)[Kremote: Compressing objects:  46% (16074/34942)[Kremote: Compressing objects:  47% (16423/34942)[Kremote: Compressing objects:  48% (16773/34942)[Kremote: Compressing objects:  49% (17122/34942)[Kremote: Compressing objects:  50% (17471/34942)[Kremote: Compressing objects:  51% (17821/34942)[Kremote: Compressing objects:  52% (18170/34942)[Kremote: Compressing objects:  53% (18520/34942)[Kremote: Compressing objects:  54% (18869/34942)[Kremote: Compressing objects:  55% (19219/34942)[Kremote: Compressing objects:  56% (19568/34942)[Kremote: Compressing objects:  57% (19917/34942)[Kremote: Compressing objects:  58% (20267/34942)[Kremote: Compressing objects:  59% (20616/34942)[Kremote: Compressing objects:  60% (20966/34942)[Kremote: Compressing objects:  61% (21315/34942)[Kremote: Compressing objects:  62% (21665/34942)[Kremote: Compressing objects:  63% (22014/34942)[Kremote: Compressing objects:  64% (22363/34942)[Kremote: Compressing objects:  65% (22713/34942)[Kremote: Compressing objects:  66% (23062/34942)[Kremote: Compressing objects:  67% (23412/34942)[Kremote: Compressing objects:  68% (23761/34942)[Kremote: Compressing objects:  69% (24110/34942)[Kremote: Compressing objects:  70% (24460/34942)[Kremote: Compressing objects:  71% (24809/34942)[Kremote: Compressing objects:  72% (25159/34942)[Kremote: Compressing objects:  73% (25508/34942)[Kremote: Compressing objects:  74% (25858/34942)[Kremote: Compressing objects:  75% (26207/34942)[Kremote: Compressing objects:  76% (26556/34942)[Kremote: Compressing objects:  77% (26906/34942)[Kremote: Compressing objects:  78% (27255/34942)[Kremote: Compressing objects:  79% (27605/34942)[Kremote: Compressing objects:  80% (27954/34942)[Kremote: Compressing objects:  81% (28304/34942)[Kremote: Compressing objects:  82% (28653/34942)[Kremote: Compressing objects:  83% (29002/34942)[Kremote: Compressing objects:  84% (29352/34942)[Kremote: Compressing objects:  85% (29701/34942)[Kremote: Compressing objects:  86% (30051/34942)[Kremote: Compressing objects:  87% (30400/34942)[Kremote: Compressing objects:  88% (30749/34942)[Kremote: Compressing objects:  89% (31099/34942)[Kremote: Compressing objects:  90% (31448/34942)[Kremote: Compressing objects:  91% (31798/34942)[Kremote: Compressing objects:  92% (32147/34942)[Kremote: Compressing objects:  93% (32497/34942)[Kremote: Compressing objects:  94% (32846/34942)[Kremote: Compressing objects:  95% (33195/34942)[Kremote: Compressing objects:  96% (33545/34942)[Kremote: Compressing objects:  97% (33894/34942)[Kremote: Compressing objects:  98% (34244/34942)[Kremote: Compressing objects:  99% (34593/34942)[Kremote: Compressing objects: 100% (34942/34942)[Kremote: Compressing objects: 100% (34942/34942), done.[K
+Receiving objects:   0% (1/125397)   Receiving objects:   1% (1254/125397)   Receiving objects:   2% (2508/125397)   Receiving objects:   3% (3762/125397)   Receiving objects:   4% (5016/125397)   Receiving objects:   5% (6270/125397)   Receiving objects:   6% (7524/125397)   Receiving objects:   7% (8778/125397)   Receiving objects:   8% (10032/125397)   Receiving objects:   9% (11286/125397)   Receiving objects:  10% (12540/125397)   Receiving objects:  11% (13794/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  12% (15048/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  13% (16302/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  14% (17556/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  15% (18810/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  16% (20064/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  17% (21318/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  18% (22572/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  19% (23826/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  20% (25080/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  21% (26334/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  22% (27588/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  23% (28842/125397), 3.91 MiB | 7.80 MiB/s   Receiving objects:  23% (29062/125397), 9.80 MiB | 9.78 MiB/s   Receiving objects:  24% (30096/125397), 9.80 MiB | 9.78 MiB/s   Receiving objects:  25% (31350/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  26% (32604/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  27% (33858/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  28% (35112/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  29% (36366/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  30% (37620/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  30% (38099/125397), 17.63 MiB | 11.73 MiB/s   Receiving objects:  31% (38874/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  32% (40128/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  33% (41382/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  34% (42635/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  35% (43889/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  36% (45143/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  37% (46397/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  38% (47651/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  39% (48905/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  40% (50159/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  41% (51413/125397), 25.68 MiB | 12.81 MiB/s   Receiving objects:  42% (52667/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  43% (53921/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  44% (55175/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  45% (56429/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  46% (57683/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  47% (58937/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  48% (60191/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  49% (61445/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  50% (62699/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  51% (63953/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  52% (65207/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  52% (66409/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  53% (66461/125397), 34.20 MiB | 13.65 MiB/s   Receiving objects:  54% (67715/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  55% (68969/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  56% (70223/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  57% (71477/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  58% (72731/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  59% (73985/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  60% (75239/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  61% (76493/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  62% (77747/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  63% (79001/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  64% (80255/125397), 43.27 MiB | 14.39 MiB/s   Receiving objects:  65% (81509/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  66% (82763/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  67% (84016/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  68% (85270/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  69% (86524/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  70% (87778/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  71% (89032/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  72% (90286/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  73% (91540/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  74% (92794/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  75% (94048/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  76% (95302/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  77% (96556/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  78% (97810/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  79% (99064/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  80% (100318/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  81% (101572/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  82% (102826/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  83% (104080/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  84% (105334/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  84% (106341/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  85% (106588/125397), 52.93 MiB | 15.09 MiB/s   Receiving objects:  86% (107842/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  87% (109096/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  88% (110350/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  89% (111604/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  90% (112858/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  91% (114112/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  92% (115366/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  93% (116620/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  94% (117874/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  95% (119128/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  96% (120382/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  97% (121636/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  98% (122890/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects:  99% (124144/125397), 62.80 MiB | 15.67 MiB/s   remote: Total 125397 (delta 89241), reused 124416 (delta 88380), pack-reused 0[K
+Receiving objects: 100% (125397/125397), 62.80 MiB | 15.67 MiB/s   Receiving objects: 100% (125397/125397), 67.18 MiB | 15.67 MiB/s, done.
+Resolving deltas:   0% (0/89241)   Resolving deltas:   1% (896/89241)   Resolving deltas:   2% (1964/89241)   Resolving deltas:   3% (2837/89241)   Resolving deltas:   4% (4200/89241)   Resolving deltas:   5% (4464/89241)   Resolving deltas:   6% (5391/89241)   Resolving deltas:   7% (6249/89241)   Resolving deltas:   8% (7145/89241)   Resolving deltas:   9% (8294/89241)   Resolving deltas:  10% (8929/89241)   Resolving deltas:  11% (9817/89241)   Resolving deltas:  12% (10793/89241)   Resolving deltas:  13% (11716/89241)   Resolving deltas:  14% (12518/89241)   Resolving deltas:  15% (13387/89241)   Resolving deltas:  16% (14324/89241)   Resolving deltas:  17% (15343/89241)   Resolving deltas:  18% (16192/89241)   Resolving deltas:  19% (16982/89241)   Resolving deltas:  20% (18175/89241)   Resolving deltas:  21% (18841/89241)   Resolving deltas:  22% (19652/89241)   Resolving deltas:  23% (20534/89241)   Resolving deltas:  24% (21429/89241)   Resolving deltas:  25% (22318/89241)   Resolving deltas:  26% (23210/89241)   Resolving deltas:  27% (24112/89241)   Resolving deltas:  28% (25518/89241)   Resolving deltas:  29% (26039/89241)   Resolving deltas:  30% (26790/89241)   Resolving deltas:  31% (27665/89241)   Resolving deltas:  32% (28774/89241)   Resolving deltas:  33% (29453/89241)   Resolving deltas:  34% (30350/89241)   Resolving deltas:  35% (31363/89241)   Resolving deltas:  36% (32136/89241)   Resolving deltas:  37% (33087/89241)   Resolving deltas:  38% (34051/89241)   Resolving deltas:  39% (34814/89241)   Resolving deltas:  40% (35803/89241)   Resolving deltas:  41% (36592/89241)   Resolving deltas:  42% (37484/89241)   Resolving deltas:  43% (38394/89241)   Resolving deltas:  44% (39267/89241)   Resolving deltas:  45% (40239/89241)   Resolving deltas:  46% (41064/89241)   Resolving deltas:  47% (42023/89241)   Resolving deltas:  48% (42843/89241)   Resolving deltas:  49% (43761/89241)   Resolving deltas:  50% (44652/89241)   Resolving deltas:  51% (45614/89241)   Resolving deltas:  58% (52001/89241)   Resolving deltas:  59% (52721/89241)   Resolving deltas:  60% (53545/89241)   Resolving deltas:  61% (54489/89241)   Resolving deltas:  62% (55346/89241)   Resolving deltas:  63% (56273/89241)   Resolving deltas:  64% (57231/89241)   Resolving deltas:  65% (58032/89241)   Resolving deltas:  66% (58927/89241)   Resolving deltas:  67% (59795/89241)   Resolving deltas:  68% (60693/89241)   Resolving deltas:  68% (61278/89241)   Resolving deltas:  69% (61580/89241)   Resolving deltas:  70% (62588/89241)   Resolving deltas:  71% (63365/89241)   Resolving deltas:  72% (64254/89241)   Resolving deltas:  73% (65153/89241)   Resolving deltas:  74% (66076/89241)   Resolving deltas:  75% (66936/89241)   Resolving deltas:  76% (67833/89241)   Resolving deltas:  77% (68719/89241)   Resolving deltas:  78% (69611/89241)   Resolving deltas:  79% (70501/89241)   Resolving deltas:  80% (71494/89241)   Resolving deltas:  81% (72493/89241)   Resolving deltas:  82% (73183/89241)   Resolving deltas:  83% (74101/89241)   Resolving deltas:  84% (74981/89241)   Resolving deltas:  85% (75942/89241)   Resolving deltas:  86% (76774/89241)   Resolving deltas:  87% (77662/89241)   Resolving deltas:  88% (78561/89241)   Resolving deltas:  89% (79447/89241)   Resolving deltas:  89% (80047/89241)   Resolving deltas:  90% (80343/89241)   Resolving deltas:  91% (81228/89241)   Resolving deltas:  92% (82104/89241)   Resolving deltas:  93% (82996/89241)   Resolving deltas:  94% (83916/89241)   Resolving deltas:  95% (84780/89241)   Resolving deltas:  96% (85673/89241)   Resolving deltas:  97% (86587/89241)   Resolving deltas:  98% (87466/89241)   Resolving deltas:  99% (88350/89241)   Resolving deltas: 100% (89241/89241)   Resolving deltas: 100% (89241/89241), done.
+Checking out files:   0% (50/11868)   Checking out files:   0% (96/11868)   Checking out files:   1% (119/11868)   Checking out files:   1% (150/11868)   Checking out files:   1% (190/11868)   Checking out files:   1% (225/11868)   Checking out files:   2% (238/11868)   Checking out files:   2% (310/11868)   Checking out files:   3% (357/11868)   Checking out files:   4% (475/11868)   Checking out files:   4% (541/11868)   Checking out files:   5% (594/11868)   Checking out files:   6% (713/11868)   Checking out files:   6% (727/11868)   Checking out files:   7% (831/11868)   Checking out files:   7% (882/11868)   Checking out files:   8% (950/11868)   Checking out files:   9% (1069/11868)   Checking out files:   9% (1155/11868)   Checking out files:  10% (1187/11868)   Checking out files:  11% (1306/11868)   Checking out files:  11% (1366/11868)   Checking out files:  12% (1425/11868)   Checking out files:  12% (1537/11868)   Checking out files:  13% (1543/11868)   Checking out files:  13% (1574/11868)   Checking out files:  13% (1607/11868)   Checking out files:  13% (1631/11868)   Checking out files:  14% (1662/11868)   Checking out files:  14% (1668/11868)   Checking out files:  14% (1697/11868)   Checking out files:  14% (1726/11868)   Checking out files:  14% (1767/11868)   Checking out files:  15% (1781/11868)   Checking out files:  15% (1805/11868)   Checking out files:  15% (1849/11868)   Checking out files:  15% (1884/11868)   Checking out files:  16% (1899/11868)   Checking out files:  16% (1925/11868)   Checking out files:  16% (1967/11868)   Checking out files:  16% (1999/11868)   Checking out files:  17% (2018/11868)   Checking out files:  17% (2026/11868)   Checking out files:  17% (2056/11868)   Checking out files:  17% (2077/11868)   Checking out files:  17% (2100/11868)   Checking out files:  17% (2119/11868)   Checking out files:  18% (2137/11868)   Checking out files:  18% (2138/11868)   Checking out files:  18% (2158/11868)   Checking out files:  18% (2181/11868)   Checking out files:  18% (2218/11868)   Checking out files:  19% (2255/11868)   Checking out files:  19% (2287/11868)   Checking out files:  19% (2328/11868)   Checking out files:  19% (2367/11868)   Checking out files:  20% (2374/11868)   Checking out files:  20% (2402/11868)   Checking out files:  20% (2432/11868)   Checking out files:  20% (2470/11868)   Checking out files:  21% (2493/11868)   Checking out files:  21% (2518/11868)   Checking out files:  22% (2611/11868)   Checking out files:  22% (2633/11868)   Checking out files:  23% (2730/11868)   Checking out files:  23% (2737/11868)   Checking out files:  24% (2849/11868)   Checking out files:  24% (2880/11868)   Checking out files:  25% (2967/11868)   Checking out files:  25% (3032/11868)   Checking out files:  26% (3086/11868)   Checking out files:  27% (3205/11868)   Checking out files:  27% (3225/11868)   Checking out files:  28% (3324/11868)   Checking out files:  29% (3442/11868)   Checking out files:  29% (3466/11868)   Checking out files:  30% (3561/11868)   Checking out files:  31% (3680/11868)   Checking out files:  31% (3734/11868)   Checking out files:  32% (3798/11868)   Checking out files:  33% (3917/11868)   Checking out files:  33% (3980/11868)   Checking out files:  34% (4036/11868)   Checking out files:  35% (4154/11868)   Checking out files:  35% (4218/11868)   Checking out files:  36% (4273/11868)   Checking out files:  37% (4392/11868)   Checking out files:  37% (4465/11868)   Checking out files:  38% (4510/11868)   Checking out files:  39% (4629/11868)   Checking out files:  39% (4739/11868)   Checking out files:  40% (4748/11868)   Checking out files:  41% (4866/11868)   Checking out files:  41% (4950/11868)   Checking out files:  42% (4985/11868)   Checking out files:  43% (5104/11868)   Checking out files:  43% (5171/11868)   Checking out files:  44% (5222/11868)   Checking out files:  45% (5341/11868)   Checking out files:  45% (5421/11868)   Checking out files:  46% (5460/11868)   Checking out files:  47% (5578/11868)   Checking out files:  47% (5654/11868)   Checking out files:  48% (5697/11868)   Checking out files:  49% (5816/11868)   Checking out files:  49% (5858/11868)   Checking out files:  50% (5934/11868)   Checking out files:  51% (6053/11868)   Checking out files:  51% (6120/11868)   Checking out files:  52% (6172/11868)   Checking out files:  53% (6291/11868)   Checking out files:  53% (6319/11868)   Checking out files:  54% (6409/11868)   Checking out files:  55% (6528/11868)   Checking out files:  55% (6531/11868)   Checking out files:  56% (6647/11868)   Checking out files:  56% (6753/11868)   Checking out files:  57% (6765/11868)   Checking out files:  58% (6884/11868)   Checking out files:  58% (6992/11868)   Checking out files:  59% (7003/11868)   Checking out files:  60% (7121/11868)   Checking out files:  60% (7232/11868)   Checking out files:  61% (7240/11868)   Checking out files:  62% (7359/11868)   Checking out files:  62% (7458/11868)   Checking out files:  63% (7477/11868)   Checking out files:  64% (7596/11868)   Checking out files:  64% (7652/11868)   Checking out files:  65% (7715/11868)   Checking out files:  66% (7833/11868)   Checking out files:  66% (7838/11868)   Checking out files:  67% (7952/11868)   Checking out files:  67% (7971/11868)   Checking out files:  68% (8071/11868)   Checking out files:  69% (8189/11868)   Checking out files:  69% (8216/11868)   Checking out files:  70% (8308/11868)   Checking out files:  71% (8427/11868)   Checking out files:  71% (8441/11868)   Checking out files:  72% (8545/11868)   Checking out files:  72% (8573/11868)   Checking out files:  73% (8664/11868)   Checking out files:  73% (8737/11868)   Checking out files:  74% (8783/11868)   Checking out files:  74% (8898/11868)   Checking out files:  75% (8901/11868)   Checking out files:  76% (9020/11868)   Checking out files:  76% (9077/11868)   Checking out files:  77% (9139/11868)   Checking out files:  77% (9213/11868)   Checking out files:  78% (9258/11868)   Checking out files:  78% (9362/11868)   Checking out files:  79% (9376/11868)   Checking out files:  80% (9495/11868)   Checking out files:  80% (9528/11868)   Checking out files:  81% (9614/11868)   Checking out files:  81% (9701/11868)   Checking out files:  82% (9732/11868)   Checking out files:  83% (9851/11868)   Checking out files:  83% (9921/11868)   Checking out files:  84% (9970/11868)   Checking out files:  84% (10056/11868)   Checking out files:  85% (10088/11868)   Checking out files:  86% (10207/11868)   Checking out files:  86% (10215/11868)   Checking out files:  86% (10318/11868)   Checking out files:  87% (10326/11868)   Checking out files:  88% (10444/11868)   Checking out files:  88% (10449/11868)   Checking out files:  89% (10563/11868)   Checking out files:  89% (10604/11868)   Checking out files:  90% (10682/11868)   Checking out files:  90% (10772/11868)   Checking out files:  91% (10800/11868)   Checking out files:  91% (10911/11868)   Checking out files:  92% (10919/11868)   Checking out files:  93% (11038/11868)   Checking out files:  93% (11087/11868)   Checking out files:  94% (11156/11868)   Checking out files:  94% (11201/11868)   Checking out files:  95% (11275/11868)   Checking out files:  95% (11307/11868)   Checking out files:  96% (11394/11868)   Checking out files:  96% (11417/11868)   Checking out files:  96% (11505/11868)   Checking out files:  97% (11512/11868)   Checking out files:  98% (11631/11868)   Checking out files:  98% (11636/11868)   Checking out files:  99% (11750/11868)   Checking out files:  99% (11780/11868)   Checking out files:  99% (11834/11868)   Checking out files: 100% (11868/11868)   Checking out files: 100% (11868/11868), done.
+bash-4.2$ ls
+cpu.c  driver.c  file.c  libgit2
+bash-4.2$ cd libgit2/
+bash-4.2$ ls
+api.docurium  CMakeLists.txt  examples	       package.json  src
+AUTHORS       COPYING	      fuzzers	       README.md     tests
+ci	      deps	      git.git-authors  script
+cmake	      docs	      include	       SECURITY.md
+bash-4.2$ git status
+gi=   
+# On branch main
+#
+# It took 3.44 seconds to enumerate untracked files. 'status -uno'
+# may speed it up, but you have to be careful not to forget to add
+# new files yourself (see 'git help status').
+nothing to commit, working directory clean
+bash-4.2$ 
+bash-4.2$ git[K[K[Kgit b[Kdiff
+[?1h=[K[?1l>bash-4.2$ git commit
+# On branch main
+nothing to commit, working directory clean
+bash-4.2$ gut [K[K[Kit log
+[?1h=commit 6c5520f334e5652d5f0476c00a3188d1d97754e7[m
+Merge: 36f7e21 eb00b48[m
+Author: Edward Thomson <ethomson@edwardthomson.com>[m
+Date:   Thu May 16 11:34:07 2024 +0100[m
+[m
+    Merge pull request #6811 from libgit2/ethomson/test_allocator[m
+    [m
+    Introduce a stricter debugging allocator for testing[m
+[m
+commit 36f7e21ad757a3dacc58cf7944329da6bc1d6e96[m
+Merge: c7af393 ae65dac[m
+Author: Edward Thomson <ethomson@edwardthomson.com>[m
+Date:   Thu May 16 10:58:48 2024 +0100[m
+[m
+    Merge pull request #6817 from libgit2/ethomson/v1.8.1[m
+    [m
+    libgit2 v1.8.1[m
+[m
+commit ae65dac85ec4bfe795b35a8f1f4815489668713f[m
+Author: Edward Thomson <ethomson@edwardthomson.com>[m
+Date:   Thu May 16 00:46:42 2024 +0100[m
+[m
+    v1.8.1: update changelog[m
+:[K[K[m
+:[K[K:[K[K:[K[K[7mNo next tag  (press RETURN)[27m[24;1H[K[K:[K[K:[K[Kcommit 834ec0f52fcafd3af011dfd3f1b36ae2ee984ea5[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Thu May 16 00:49:10 2024 +0100[m
+:[K[K[m
+:[K[K    v1.8.1: update version numbers[m
+:[K[K[?1l>bash-4.2$ exit
+exit
+
+Script done on Mon 20 May 2024 04:41:54 PM CDT
